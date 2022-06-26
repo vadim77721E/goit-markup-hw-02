@@ -5,109 +5,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
+rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
 <!--шапка-->
 <header class="page-header">
-        <nav>
-            <a href="/index.html" class="logo">
-                WebStudio
+        <nav class="page-nav">
+            <a  href="/index.html" class="logo link">
+                Web<span  class="logo-accent">Studio</span>
             </a>
-            <ul class="site-nav">
-                <li><a href="/">Студия</a></li>
-                <li><a href="/">Портфолио</a></li>
-                <li><a href="/">Контакты</a></li>
+            <ul class="meny-list list">
+                <li class="meny-list-item"><a class="nav-list-link link"  href="/">Студия</a></li>
+                <li class="meny-list-item"><a class="nav-list-link link"  href="/">Портфолио</a></li>
+                <li class="meny-list-item"><a class="nav-list-link link"  href="/">Контакты</a></li>
             </ul>
         </nav>
-        <ul class="auth-nav">
-            <li><a href="info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="+380961111111">+380961111111</a></li>
+        <ul class="list">
+            <li><a class="contacts-phone-mail link"   href="info@devstudio.com">info@devstudio.com</a></li>
+            <li><a class="contacts-phone-mail link"   href="+380961111111">+380961111111</a></li>
         </ul>
 </header>
-    <section>
-    <h1>Эффективные решения для вашего бизнеса</h1>
-    <button type="button">Заказать услугу</button> 
+    <section class="title-baner">
+    <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
+    <button class="modal-btn" type="button">Заказать услугу</button> 
     </section>
 <!--Список-->
 <section> 
      <h2 class="visually-hidden"  Робочі процеси></h2>
-  <ul>
+  <ul class="list">
     <li>
-        <h3>Внимание к деталям</h3>
-        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+        <h3 class="text-title">Внимание к деталям</h3>
+        <p class="text-title-one">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
     </li>
     <li>
-        <h3>Пунктуальность</h3> 
-        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+        <h3 class="text-title">Пунктуальность</h3> 
+        <p class="text-title-one">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
     </li>
     <li>
-        <h3>Планирование</h3>
-        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+        <h3 class="text-title">Планирование</h3>
+        <p class="text-title-one">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
     </li>
     <li>
-        <h3>Современные технологии</h3>
-        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+        <h3 class="text-title">Современные технологии</h3>
+        <p class="text-title-one">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
     </li>
   </ul>
 </section>
-<section>
+<section class="working-title">
     <!--Картинки з роботи-->
-    <h2>Чем мы занимаемся</h2>
-    <ul>
+    <h2 class="working-text">Чем мы занимаемся</h2>
+    <ul class="list">
       <li>
-          <img src="./images/верстка1.png" alt="верстка">
+          <img src="./images/верстка1.png" alt="верстка" width="370" height="294">
       </li>
       <li>
-          <img src="./images/стилізація.png" alt="стилізація">
+          <img src="./images/стилізація.png" alt="стилізація" width="370" height="294">
       </li>
       <li> 
-          <img src="./images/графіка.png" alt="графіка"> 
+          <img src="./images/графіка.png" alt="графіка" width="370" height="294"> 
       </li>
     </ul></section>
 
-<section>
+<section class="work-profession">
     <!--КОМАНДА-->
-    <h2>Наша команда</h2>
+    <h2 class="working-text">Наша команда</h2>
     <ul>
         <li>
-                <img src="./images/product.png" alt="працівник 1" width="200" height="150" />
-            <h3> Ігор Демьяненко</h3>
-            <p> Product Designer
+                <img src="./images/product.png" alt="працівник 1" width="270" height="260" />
+            <h3 class="name"> Ігор Демьяненко</h3>
+            <p class="profession"> Product Designer
             </p>
         </li>
         <li>
-                <img src="./images/frontend.png" alt="працівник 2" width="200" height="150" />
+                <img src="./images/frontend.png" alt="працівник 2" width="270" height="260" />
             </div>
-            <h3> Ольга Репина</h3>
-            <p> Frontend Developer
+            <h3 class="name"> Ольга Репина</h3>
+            <p class="profession"> Frontend Developer
             </p>
         </li>
         <li>
-                <img src="./images/marketing.png" alt="працівник 3" width="200" height="150" />
-            <h3> Николай Тарасов</h3>
-            <p> Marketing
+                <img src="./images/marketing.png" alt="працівник 3" width="270" height="260" />
+            <h3 class="name"> Николай Тарасов</h3>
+            <p class="profession"> Marketing
             </p>
         </li>
         <li>
-                <img src="./images/uldesigner.png" alt="працівник 4" width="200" height="150" />
-            <h3> Михаил Ермаков</h3>
-            <p> FUI Designer
+                <img src="./images/uldesigner.png" alt="працівник 4" width="270" height="260" />
+            <h3 class="name"> Михаил Ермаков</h3>
+            <p class="profession"> FUI Designer
             </p>
         </li>
     </ul>
 </section>
 <!--футер-->
 <footer>
-    <a href="/index.html" class="logo">
-        WebStudio
+    <a href="/index.html" class="logo link">
+        Web<span class="logo-accent footer-logo">Studio</span>
     </a>
     <address >
         <ul>
-          <li><a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г.Киев,пр-т
+          <li><a class="link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г.Киев,пр-т
             Леси Украинки, 26</a> </li>
           <li><a class="link" href="mailto:info@devstudio.com">info@example.com</a> </li>
-          <li><a href="tel:+380961111111">+380961111111</a> </li>
+          <li><a class="contacts-phone-mail link"   href="+380961111111">+380961111111</a></li>
         </ul>
       </address>
 </footer>
