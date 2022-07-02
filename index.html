@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" 
-rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
@@ -18,10 +17,10 @@ rel="stylesheet">
             <a  href="/index.html" class="logo link">
                 Web<span  class="logo-accent">Studio</span>
             </a>
-            <ul class="meny-list list">
-                <li class="meny-list-item"><a class="nav-list-link link"  href="/">Студия</a></li>
-                <li class="meny-list-item"><a class="nav-list-link link"  href="/">Портфолио</a></li>
-                <li class="meny-list-item"><a class="nav-list-link link"  href="/">Контакты</a></li>
+            <ul class="nav-list-link list">
+                <li> <a href="/" class=" link current">Студия</a></li>
+                <li> <a href="./portfolio.html" class="link current">Портфолио</a></li>
+                <li> <a href="/" class=" link">Контакты</a></li>
             </ul>
         </nav>
         <ul class="list">
@@ -34,7 +33,7 @@ rel="stylesheet">
     <button class="modal-btn" type="button">Заказать услугу</button> 
     </section>
 <!--Список-->
-<section> 
+<section class="work-title-text"> 
      <h2 class="visually-hidden"  Робочі процеси></h2>
   <ul class="list">
     <li>
@@ -73,7 +72,7 @@ rel="stylesheet">
 <section class="work-profession">
     <!--КОМАНДА-->
     <h2 class="working-text">Наша команда</h2>
-    <ul>
+    <ul class="list" >
         <li>
                 <img src="./images/product.png" alt="працівник 1" width="270" height="260" />
             <h3 class="name"> Ігор Демьяненко</h3>
@@ -102,16 +101,16 @@ rel="stylesheet">
     </ul>
 </section>
 <!--футер-->
-<footer>
+<footer class="footer-background">
     <a href="/index.html" class="logo link">
         Web<span class="logo-accent footer-logo">Studio</span>
     </a>
     <address >
-        <ul>
-          <li><a class="link" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г.Киев,пр-т
+        <ul class="list">
+          <li><a class="link color-text-soc contacts-phone-mail" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г.Киев,пр-т
             Леси Украинки, 26</a> </li>
-          <li><a class="link" href="mailto:info@devstudio.com">info@example.com</a> </li>
-          <li><a class="contacts-phone-mail link"   href="+380961111111">+380961111111</a></li>
+          <li><a class="link color-text-soc contacts-phone-mail" href="mailto:info@devstudio.com">info@example.com</a> </li>
+          <li><a class="contacts-phone-mail  color-text-soc link"   href="+380961111111">+380961111111</a></li>
         </ul>
       </address>
 </footer>

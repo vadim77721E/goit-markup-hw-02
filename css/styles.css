@@ -1,65 +1,75 @@
 :root {
+--primary-font-family: Roboto, sans-serif;
+--secondary-font-family: Raleway, sans-serif;
+--primary-text-color-theme-dakr: #212121 ;
+--primary-text-color-theme-light:#757575; 
+--secondary-text-color-theme-whaite:#FFFFFF;
+--secondary-text-color-theme-light:#2196F3;
 --accent-color:#188ce8;
---primary-font-family: 'Roboto' sans-serif;
---secondary-font-family:'Raleway' sans-serif;
---primary-text-color-theme-dakr:#212121 ;
---primary-text-color-theme-light:#757575; ;
---secondary-text-color-theme-whaite:#FFFFFF ;
---secondary-text-color-theme-light:#2196F3 ;
 }
+
+body {
+font-family: var(--primary-font-family);
+}
+
 /* ======ШАПКА ПОЧАТОК======== */
 .logo{
-    font-family: var(--secondary-font-family);
-   font-style: normal;
+   font-family: var(--secondary-font-family);
    font-weight: 700;
    font-size: 26px;
-   line-height: 1,19;
+   line-height: 1.19;
    letter-spacing: 0.03em;
-   color: #2196F3;
+   color: var(--secondary-text-color-theme-light);
 }
-.nav-list-link{
-    font-family: var(--primary-font-family);
-   font-style: normal;
+.logo-accent{
+    color: black;
+}
+
+.nav-list-link .link{
    font-weight: 500;
    font-size: 14px;
    line-height: 1.42;
    letter-spacing: 0.02em;
-   color: #212121;
+   color: var(--primary-text-color-theme-dakr);
 
 }
-.nav-list-link:hover,
-.nav-list-link:focus {
+.nav-list-link .link:hover,
+.nav-list-link .link:focus {
     color: var(--accent-color);
+    
 }
+.current{
+   color: var(--secondary-text-color-theme-light);
+}
+
 .contacts-phone-mail {
-    font-family: var(--primary-font-family);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0.02em;
-    color: #212121;
+    color: var(--primary-text-color-theme-dakr);
 }
 .contacts-phone-mail:hover,
 .contacts-phone-mail:focus {
     color: var(--accent-color);
 }    
-/* ======початок помпонентів======== */
-/* ======кінець помпонентів======== */
-
 /* ======ШАПКА КІНЕЦЬ======== */
 /* ======Банер і кнопка хедер======== */
+.title-baner{
+background: #2F303A; 
+}
 .main-title{
-    font-family: var(--primary-font-family);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.33;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    /* color: #FFFFFF; */
+    color: var(--secondary-text-color-theme-whaite);
+    /* color: --secondary-text-color-theme-whaite; */
 }
 .modal-btn {
-    font-family: var(--primary-font-family);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.85;
@@ -67,19 +77,83 @@
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--secondary-text-color-theme-whaite);
     cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
     background-color: var(--accent-color);
-    color: #FFFFFF;
+    color: var(--secondary-text-color-theme-whaite);
 }
 /* ======Банер і кнопка хедер кінець======== */
-.logo-accent{
-    color: black;
+
+/* =======section 1 */
+.work-title-text{
+    background: #E5E5E5;
+}
+.text-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.text-title-one{
+    font-size: var(--primary-text-color-theme-light);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* ====end */
+/* ====wokking img */
+.working-title{
+    background-color: #E5E5E5;
+}
+.working-text {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.7;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+/* ====end */
+/* ====наша команда====== */
+.work-profession{
+    background: #F5F4FA;
+}
+.name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+.profession{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/* ====наша команда кінець====== */
+/* ======футер======= */
+.footer-background {
+    background: #2F303A;
+}
+.footer-logo{
+    color: #FFFFFF;
 }
 
+.color-text-soc {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* ===ENG FOOTER===== */
 .list {
     list-style: none ;
 }
@@ -87,12 +161,6 @@
 .link {
     text-decoration: none;
 }
-
-
-
-
-
-
 
 .visually-hidden {
     position: absolute;
@@ -102,4 +170,22 @@
     padding: 0;
     overflow: hidden;
     border: 0;
-    clip: rect(0 0 0 0)  }
+    clip: rect(0 0 0 0)  
+}
+
+       /* ======PORTFOLIO======= */
+.modal-btn-primary {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color-theme-dakr);
+    cursor: pointer;
+}
+ .modal-btn-primar:hover,
+ .modal-btn-primar:focus {
+   background-color: var(--accent-color);
+   color: var(--secondary-text-color-theme-whaite);
+ }
