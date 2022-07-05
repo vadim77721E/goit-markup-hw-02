@@ -1,15 +1,22 @@
 :root {
 --primary-font-family: Roboto, sans-serif;
 --secondary-font-family: Raleway, sans-serif;
---primary-text-color-theme-dakr: #212121 ;
+--primary-text-color-theme-dakr: #212121;
 --primary-text-color-theme-light:#757575; 
 --secondary-text-color-theme-whaite:#FFFFFF;
---secondary-text-color-theme-light:#2196F3 ;
+--secondary-text-color-thtme-whaite-light:#E5E5E5;
+--secondary-text-color-theme-light:#2196F3;
+--primary-text-color-theme-dark-light:#2F303A;
+--secondary-text-color-theme-grey:#F5F4FA;
 --accent-color:#188ce8;
 }
 
 body {
 font-family: var(--primary-font-family);
+font-size: 14px;
+letter-spacing: 0.03em;
+background: var(--secondary-text-color-theme-whaite);
+color: var(--primary-text-color-theme-dakr);
 }
 .list {
     list-style: none ;
@@ -25,16 +32,14 @@ font-family: var(--primary-font-family);
    font-weight: 700;
    font-size: 26px;
    line-height: 1.19;
-   letter-spacing: 0.03em;
    color: var(--secondary-text-color-theme-light);
 }
 .logo-accent{
-    color: black;
+    color: var(--primary-text-color-theme-dakr);
 }
 
 .nav-list-link .link{
    font-weight: 500;
-   font-size: 14px;
    line-height: 1.42;
    letter-spacing: 0.02em;
    color: var(--primary-text-color-theme-dakr);
@@ -52,10 +57,9 @@ font-family: var(--primary-font-family);
 
 .contacts-phone-mail {
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.42;
     letter-spacing: 0.02em;
-    color: var(--primary-text-color-theme-dakr);
+    color: var(--primary-text-color-theme-light)
 }
 
 .contacts-phone-mail:hover,
@@ -65,7 +69,7 @@ font-family: var(--primary-font-family);
 /* ======ШАПКА КІНЕЦЬ======== */
 /* ======Банер і кнопка хедер======== */
 .title-baner{
-background: #2F303A; 
+background: var(--primary-text-color-theme-dark-light); 
 }
 .main-title{
     font-weight: 900;
@@ -98,64 +102,57 @@ background: #2F303A;
 
 /* =======section 1 */
 .work-title-text{
-    background: #E5E5E5;
+    background: var(--secondary-text-color-thtme-whaite-light)
 }
 .text-title{
     font-weight: 700;
-    font-size: 14px;
     line-height: 1.4;
-    letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #212121;
+    color: var(--primary-text-color-theme-dakr);
 }
 .text-title-one{
     font-size: var(--primary-text-color-theme-light);
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color-theme-light);
 }
 /* ====end */
 /* ====wokking img */
 .working-title{
-    background-color: #E5E5E5;
+    background-color: var(--secondary-text-color-thtme-whaite-light)
 }
 .working-text {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.7;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color-theme-dakr);
 }
 /* ====end */
 /* ====наша команда====== */
 .work-profession{
-    background: #F5F4FA;
+    background: var(--secondary-text-color-theme-grey);
 }
 .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--primary-text-color-theme-dakr);
 }
 .profession{
     font-size: 16px;
     line-height: 1.8;
     text-align: center;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color-theme-light);
 }
 /* ====наша команда кінець====== */
 /* ======футер======= */
 .footer-background {
-    background: #2F303A;
+    background: var(--primary-text-color-theme-dark-light);
 }
 .footer-logo{
-    color: #FFFFFF;
+    color: var(--secondary-text-color-theme-whaite);
 }
 
 .color-text-soc {
@@ -164,6 +161,17 @@ background: #2F303A;
 .contacts-adress{
     color: var(--secondary-text-color-theme-whaite);
 }
+
+ .contacts-footer{
+   font-weight: normal; 
+   font-style: normal;
+   line-height: 1.42;
+}
+.contacts-footer:hover,
+.contacts-footer:focus {
+color: var(--accent-color);
+}
+
 /* ===ENG FOOTER===== */
 .visually-hidden {
     position: absolute;
@@ -183,7 +191,6 @@ background: #2F303A;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--primary-text-color-theme-dakr);
     cursor: pointer;
 }
@@ -194,18 +201,19 @@ background: #2F303A;
  }
 
  .photo-market{
-    background-color: #E5E5E5;
+    background-color: var(--secondary-text-color-theme-whaite);
  }
  .name-photo{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121; 
+    color: var(--primary-text-color-theme-dakr); 
  }
  .text-photo{
     font-size: 16px;
     line-height: 1.9;
-    letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color-theme-light);
  }
+
+ 
